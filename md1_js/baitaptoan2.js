@@ -1,3 +1,7 @@
-let C = 12;
-let F = (9 * C) / 5 + 32;
-console.log(F);
+function CtoF(celsius) {
+    var cTemp = celsius;
+    var cToFahr = cTemp * 9 / 5 + 32;
+    var message = cTemp + ' C is ' + cToFahr + ' F.';
+    console.log(message);
+}
+CtoF(60);
