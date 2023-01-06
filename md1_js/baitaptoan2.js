@@ -4,4 +4,4 @@ function CtoF(celsius) {
     var message = cTemp + ' C is ' + cToFahr + ' F.';
     console.log(message);
 }
-CtoF(60);
+CtoF(50);

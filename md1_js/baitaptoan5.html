@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border=0 width="15%">
+  <tr>
+    <th align="center">Amount</th>
+    <th>From</th>
+    <th>Currency</th>
+    <th>To</th>
+    <th>Currency</th>
+  </tr>
+  <tr>
+    <td><input type="text" id="Amount"></td>
+    <td>
+      <select id="From">
+      <option value="VND">VND</option>
+      <option value="USD">USD</option>
+    </select></td>
+    <td></td>
+    <td></td>
+    <td align="left" >
+      <select id="To">
+      <option value="VND">VND</option>
+      <option value="USD">USD</option>
+        </select>
+    </td>
+    <td>
+      <button type="button" onclick="ChangeMoney()">Convert</button>
+    </td>
+  </tr>
+</table>
+<br>
+<p id="Result">Result:  Đ</p>
+<script src="baitaptoan5.js"> </script>
+
+</body>
+</html>
