@@ -1,0 +1,11 @@
+if (bmi < 18) {
+        result = 'Underweight';
+    } else if (bmi < 25) {
+        result = 'Normal';
+    } else if (bmi < 30) {
+        result = 'Overweight';
+    } else {
+        result = 'obese';
+    }
+    document.getElementById('result') = result;
+}
