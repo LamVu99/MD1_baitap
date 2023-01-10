@@ -16,10 +16,11 @@
         let n = +document.getElementById('n').value;
         let r = +document.getElementById('r').value;
         let result;
-        for (let i = 0; i < n; i++) {
-            result = a + (a * (r / 100));
+        for (let i = 0 ; i < n; i++) {
+            result = a + ((a * (r / 100)) * n);
         }
        document.getElementById("result").innerHTML = result;
+        return 0;
     }
 </script>
 </body>
