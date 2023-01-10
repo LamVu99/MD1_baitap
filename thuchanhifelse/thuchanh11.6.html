@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function checkTriangel() {
+    let a = +prompt('Nhap canh a');
+    let b = +prompt('Nhap canh b');
+    let c = +prompt('Nhap canh c');
+    if (a > 0 && b > 0 && c > 0 && (a + b) > c && (b + c) > a && (a + c) > b) {
+      alert(' Đây là cạnh của 1 tam giác ' );
+    } else {
+      alert('Đây không phải là cạnh của 1 tam giác');
+    }
+  }
+  checkTriangel()
+</script>
+
+</body>
+</html>

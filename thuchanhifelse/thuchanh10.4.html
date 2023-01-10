@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập điểm kiểm tra">
+<input type="text" id="b" placeholder="Nhập điểm thi giữa kì">
+<input type="text" id="c" placeholder="Nhập điểm thi cuối kì">
+<button type="button" onclick="checkscores()">Enter</button>
+<p id="result">Nhận kết quả</p>
+
+<script>
+  function checkscores() {
+    let a = +document.getElementById('a').value;
+    let b = +document.getElementById('b').value;
+    let c = +document.getElementById('c').value;
+    let GPA = Number(a + b + c) / 3;
+    let result;
+
+    if (GPA >= 8) {
+      result = ('Xếp loại giỏi');
+    }
+    else if (GPA >= 6.5) {
+      result = ("Xếp loại khá");
+    } else if (GPA >= 5) {
+      result = ('Xếp loại trung bình');
+    } else if (GPA >= 4) {
+      result = ('Xếp loại yếu');
+    } else {
+      result = ('Xếp loại kém');
+    }
+    document.getElementById('result'). innerHTML = result;
+  }
+
+</script>
+
+</body>
+</html>

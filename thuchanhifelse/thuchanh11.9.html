@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><h1>Gửi tiết kiệm</h1>
+<input type="text" id ="a" placeholder="Nhập số tiền vốn">
+<input type="text" id ="n" placeholder="Nhập số tháng gửi">
+<input type="text" id ="r" placeholder="Nhập % lãi bạn muốn">
+<button type="button" onclick="tienlai()">Enter</button>
+<p id="result">Trả kết quả</p>
+<script>
+    function tienlai() {
+        let a = +document.getElementById('a').value;
+        let n = +document.getElementById('n').value;
+        let r = +document.getElementById('r').value;
+        let result;
+        for (let i = 0; i < n; i++) {
+            result = a + (a * (r / 100));
+        }
+       document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>

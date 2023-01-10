@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tiendien() {
+        let bac1 = 1678;
+        let bac2 = 1734;
+        let bac3 = 2014;
+        let bac4 = 2536;
+        let tienDien;
+        let sodien = +prompt('Nhập số điện đã dùng');
+        if (sodien < 0) {
+            alert('Xin mời nhập lại số điện');
+        } else if (sodien <= 50) {
+            tienDien = bac1 * sodien;
+            alert('số tiền phải đóng là:' + tienDien);
+        } else if (sodien >= 51 && sodien <= 100) {
+            tienDien = 50 * bac1 + ((sodien - 50) * bac2);
+            alert('số tiền phải đóng là:' + tienDien);
+        } else if (sodien > 100 && sodien <= 200) {
+        tienDien = (50 * bac1) + (50 * bac2) + ((sodien - 100) * bac3);
+        alert('số tiền phải đóng là:' + tienDien);
+        } else
+            tienDien = (50 * bac1) + (50 * bac2) + (100 * bac3) + ((sodien - 200) * bac4);
+        alert('số tiền phải đóng là:' + tienDien);
+    }
+    tiendien()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Tính cước điện thoại cho một hộ gia đình</h1>
+<input type="text" id="a" placeholder="Tổng số phút đã gọi">
+<button type="button" onclick="checkPrice()">Enter</button>
+<p id="result"> Kết quả: </p>
+<script>
+  function checkPrice() {
+    const dtcodinh = 25000;
+    let minutes = +document.getElementById('a').value;
+    let price;
+    let result;
+    if (minutes > 200) {
+      price = 200 * minutes;
+      result = ' số tiền phải trả ' + (((minutes - 200) * 200 + 150 * 400 + 50 * 600) + 25000) + ' Đ ';
+    } else if (minutes > 50) {
+      price = 400 * minutes;
+      result = ' số tiền phải trả ' + (((minutes - 50) * 400 + 50 * 600) + 25000) + ' Đ ';
+    } else {
+      price = 600 * minutes;
+      result = ' số tiền phải trả ' + (dtcodinh + price) + ' Đ ';
+    }
+    document.getElementById('result').innerHTML = result;
+  }
+</script>
+
+</body>
+</html>

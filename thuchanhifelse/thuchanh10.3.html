@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body><h1>Tìm số lớn nhất trong 3 số:</h1>
+<input type="text" id="a" placeholder="Nhập số a">
+<input type="text" id="b" placeholder="Nhập số b">
+<input type="text" id="c" placeholder="Nhập số c">
+<button type="button" onclick="checkNumber()">Enter</button>
+<p id="result">Nhận kết quả</p>
+<script>
+  function checkNumber() {
+    let a = document.getElementById('a').value;
+    let b = document.getElementById('b').value;
+    let c = document.getElementById('c').value;
+    let result
+    if (a > b && a > c) {
+      result = a + ' là số lớn nhất ';
+    } else if (b > a && b > c) {
+      result = b + ' là số lớn nhất ';
+    } else {
+      result = c + ' là số lớn nhất ';
+    }
+    document.getElementById('result').innerHTML = result;
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function TTNCN() {
+    let tienLuong = +prompt('Nhập tiền lương');
+    let thue;
+    if (tienLuong < 0) {
+        alert('Xin mời nhập lại');
+    } else if (tienLuong <= 4000000) {
+    alert('không phải đóng thuế');
+} else if (tienLuong > 4000000 && tienLuong <= 6000000) {
+    thue = tienLuong * (5 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+} else if (tienLuong > 6000000 && tienLuong <= 9000000) {
+    thue = tienLuong * (10 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+} else if (tienLuong > 9000000 && tienLuong <= 14000000) {
+    thue = tienLuong * (15 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+} else if (tienLuong > 14000000 && tienLuong <= 24000000) {
+    thue = tienLuong * (20 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+} else if (tienLuong > 24000000 && tienLuong <= 44000000) {
+    thue = tienLuong * (25 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+} else if (tienLuong > 44000000 && tienLuong <= 84000000) {
+    thue = tienLuong * (30 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+} else {
+    thue = tienLuong * (35 / 100);
+    alert('Mức thuế phải đóng là: ' + thue);
+}
+  }
+  TTNCN()
+</script>
+
+</body>
+</html>

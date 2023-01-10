@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><h1> Chuyển từ mét sang feet</h1>
+<input type="number" id="met" placeholder="nhap so met">
+<button type="button" onclick="changeM()">Enter</button>
+<p id="result">Kết quả:</p>
+<script>
+    function changeM() {
+        let met = document.getElementById('met').value;
+        let result = (met / 0.3048);
+        document.getElementById('result').innerHTML = result + ' feet ';
+    }
+</script>
+
+</body>
+</html>
