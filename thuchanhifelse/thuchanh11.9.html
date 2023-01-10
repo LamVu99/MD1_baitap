@@ -15,9 +15,12 @@
         let a = +document.getElementById('a').value;
         let n = +document.getElementById('n').value;
         let r = +document.getElementById('r').value;
+        let i = 0;
+        let sotienlai;
         let result;
-        for (let i = 0 ; i < n; i++) {
-            result = a + ((a * (r / 100)) * n);
+        for (;i < n; i++) {
+            sotienlai = a * (r / 100) * n;
+            result = a + sotienlai;
         }
        document.getElementById("result").innerHTML = result;
         return 0;
