@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let m = +prompt('Nhap chieu dai');
+  let n = +prompt('Nhap chieu rong');
+  for (let i = 0; i <= m; i++) {
+    for (let j = 0; j <= n; j++) {
+      if(i == 0 || j == 0 || i == m - 1 || j == n - 1) {
+        document.write(' * ');
+      } else {
+        document.write('   ');
+      }
+    }
+  }
+</script>
+</body>
+</html>
