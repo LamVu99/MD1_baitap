@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập năm bất kì để xem năm đó thuộc thế kỉ nào" style="width: 15%">
+<button type="button" onClick="theky()">Enter</button>
+<p id="result">Kết quả: </p>
+<script>
+    function theky() {
+        let a = document.getElementById('a').value;
+        let result;
+        if (a != null) {
+            result = a / 100;
+        }
+        document.getElementById('result').innerHTML = 'Năm: '+ a + ' thuộc thế kỉ thứ: ' + Math.ceil(result);
+    }
+</script>
+</body>
+</html>

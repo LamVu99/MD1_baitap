@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập độ dài cạnh a">
+<button type="button" onclick="hinhvuong()">Enter</button>
+<p id="result">Kết quả: </p>
+<script>
+    function hinhvuong() {
+        let a = document.getElementById('a').value;
+        let result;
+        result = 'Chu vi hình vuông là: ' + a * 4 + '<br />' + 'Diện tích hình vuông là: ' + a * a;
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+
+</body>
+</html>
+

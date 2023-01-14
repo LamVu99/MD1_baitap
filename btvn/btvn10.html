@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập a">
+<input type="text" id="b" placeholder="Nhập b">
+<button type="button" onClick="sumab()">Enter</button>
+<p id="result">Kết quả: </p>
+<script>
+    function sumab() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let sum = Number(a) + Number(b);
+        document.getElementById('result').innerHTML = 'Tổng của a và b là: ' + sum;
+    }
+</script>
+</body>
+</html>

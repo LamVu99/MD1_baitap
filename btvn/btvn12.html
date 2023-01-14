@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập a">
+<input type="text" id="b" placeholder="Nhập b">
+<input type="text" id="c" placeholder="Nhập c">
+<button type="button" onClick="hinhtamgiac()">Enter</button>
+<p id="result">Kết quả: </p>
+<script>
+    function hinhtamgiac() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        let result;
+        if ((a + b) > c && (b + c) > a && (a + c) > b) {
+            if (a === b && a === c && b === c) {
+                result = 'đây là tam giác đều!';
+            } else if (a === b || a === c || b === c) {
+                result = 'đây là tam giác cân!'
+            } else if (a * a == b * b + c * c || b * b == a * a + c * c || c * c == a * a + b * b) {
+                result = 'đây là tam giác vuông!'
+            }
+        } else {
+            result = 'đây không phải tam giác!'
+        }
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
+</body>
+</html>
