@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a = window.prompt('nhap so');
+  let b = a.toString();
+  let result = [b[0]];
+  for (i = 1; i < b.length; i++) {
+    if ((b[i-1] % 2 === 0) && (b[i] % 2 === 0)) {
+      result.push('-', b[i]);
+    } else {
+      result.push(b[i]);
+    }
+  }
+  console.log(result.join(''));
+</script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const numbers = [2, 4, 5, 10, 12, 15, 20, 21, 9, 11];
+    let sum = 0;
+    let max = numbers[0];
+    let index = 0
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    avg = sum / numbers.length;
+    console.log ('trung bình của mảng là: '+ avg + ' tổng: ' + sum);
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+            index = i;
+        }
+    }
+    console.log(' vị trí số lớn nhất: ' + index + ' số lớn nhất: ' + max)
+</script>
+</body>
+</html>

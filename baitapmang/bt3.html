@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    let V = +prompt('Nhap phan tu');
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        numbers.push(prompt('nhap so'));
+    }
+    for (let i = 0; i < numbers.length; i++) {
+        if (V == numbers[i]) {
+            index = i;
+            console.log('vi tri: ' + i + ' V is in array');
+
+        } else {
+            index = i;
+            console.log('vi tri: ' + i + 'V is not in array');
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
