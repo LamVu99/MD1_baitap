@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = +prompt('nhập số nguyên tố cần check');
+    checkSNT(number)
+
+    function checkSNT(number) {
+        let checkSNT = false;
+        let count = 0
+        if (number == 0) {
+            alert(number + 'không phải số nguyên tố');
+        } else {
+            for (let i = 1; i <= number; i++) {
+                if (number % i == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                checkSNT = true;
+            }
+            if (checkSNT) {
+                alert(number + 'day la snt')
+            } else {
+                alert(number + 'day ko phai snt')
+            }
+        }
+    }
+
+</script>
+
 </body>
 </html>

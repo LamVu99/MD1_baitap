@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a = +prompt('nhap so meter');
+  let b = +prompt('nhap so foot');
+  function foottometer(foot) {
+    foot = 3.279 * a;
+    document.write('foot = ' + foot + '<br>')
+  }
+
+  function metertofoot(meter) {
+    meter = 0.305 * b;
+    document.write('meter= ' + meter + '<br>')
+  }
+  foottometer(a);
+  metertofoot(b);
+
+</script>
 </body>
 </html>

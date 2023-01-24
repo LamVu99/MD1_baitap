@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  function tempo() {
+      let i = +prompt('Nhap nhiet do');
+      while (i < 20 || i > 100) {
+          if (i < 20) {
+              alert('Xin hay tang nhiet do');
+              i = +prompt('Nhap nhiet do');
+          } else if (i > 100) {
+              alert('xin hay giam nhiet do');
+              i = +prompt('Nhap nhiet do');
+          }
+      } alert('nhiet do binh thuong')
+  }
+  tempo()
+</script>
+
 </body>
 </html>

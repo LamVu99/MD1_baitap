@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<img src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-nobita-chat-ngau-nhat-429x600.jpg" id="anh"
+     alt="" style="width: 128px; height: 128px; position: relative; left: 300px; top: 100px; border-radius: 50%">
+<script>
+  let x = document.getElementById('anh');
+  setInterval(() => {
+    x.style.left = parseInt(x.style.left) + 10 + 'px';
+    if (parseInt(x.style.left) >= window.innerWidth) {
+     x.style.left = '-150px'
+    }
+  }, 10)
+</script>
 </body>
 </html>

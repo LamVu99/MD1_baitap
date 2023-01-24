@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="number" id="number" placeholder="nhap so">
+<input type="number" id="number1" placeholder="nhap so">
+<button type="button" onclick="Number()">Enter</button>
+<p id="result">Ket qua</p>
+<script>
+  function numbers(a, b) {
+    let result = a * b;
+    return result;
+  }
+  function Number() {
+    let a = +document.getElementById('number').value;
+    let b = +document.getElementById('number1').value;
+    let result = numbers(a, b);
+    document.getElementById('result').innerHTML = result;
+  }
+</script>
 </body>
 </html>

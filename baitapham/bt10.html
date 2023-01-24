@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function numbers(a) {
+        if (a == 0){
+            return 1;
+        }
+        return a * numbers(a - 1);
+    }
+    let a = +prompt('nhap a');
+    alert(numbers(a));
+
+</script>
 </body>
 </html>

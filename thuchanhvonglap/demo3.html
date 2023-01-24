@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="number" placeholder="nhập a">
+<button type="button" onclick="print_number()">Enter</button>
+<p id="result"> ket qua </p>
+<script>
+    function print_number() {
+        let number = document.getElementById("number").value;
+        number = parseInt(number);
+        let html = '';
+        for (let i = 1; i <= number; i++) {
+            html += i + ' <br/>';
+        }
+        document.getElementById("result").innerHTML = html;
+    }
+
+<!--<script>-->
+<!--    function demo() {-->
+<!--        let number = document.getElementById('b').value;-->
+<!--        let result;-->
+<!--        for (let i = 1; i <= number; i++) {-->
+<!--           result = i + '<br>'-->
+<!--            document.getElementById('result').innerHTML += result;-->
+<!--        }-->
+<!--    }-->
+</script>
 </body>
 </html>

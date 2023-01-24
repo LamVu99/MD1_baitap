@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  function switchNumber(a, b) {
+    let c = 0
+    c = a;
+    a = b;
+    b = c;
+    result = 'a la: ' + a + ' b la: '+ b;
+    return result
+  }
+  let a = +prompt('nhap a');
+  let b = +prompt('nhap b');
+  alert(switchNumber(a, b));
+</script>
+
 </body>
 </html>

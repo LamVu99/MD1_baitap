@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+function checkArray (a, b) {
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == b) {
+            count++;
+        } if (count == 0) {
+            return count = -1;
+        }
+    } return count;
+}
+let a = [1,2,3,4,5,6];
+let b = [0];
+alert(checkArray(a, b));
+</script>
+
 </body>
 </html>

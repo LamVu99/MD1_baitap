@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function giaithua(x) {
+        let n = 1;
+        for (let i = 1; i <= x; i++) {
+            n = n * i;
+        }
+        return n;
+    }
+    let x = +prompt('nhap so');
+    alert(giaithua(x));
+</script>
 </body>
 </html>

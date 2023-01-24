@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  function numbers(a, b, c) {
+    let min;
+    if (a < b && a < c) {
+      min = a;
+      return a
+    } else if (b < a && b < c){
+      min = b;
+      return b
+    } else {
+      min = c;
+      return c
+    }
+  }
+  let a = +prompt('nhap a');
+  let b = +prompt('nhap b');
+  let c = +prompt('nhap c');
+  alert('so min la: ' + numbers(a, b, c));
+</script>
+
 </body>
 </html>

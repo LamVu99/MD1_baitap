@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function check_stars(star) {
+        let index = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (star == a[i]) {
+                index = i;
+                return b[index]
+            }
+        }
+        return "cant find the star";
+    }
+    let star = prompt('Nhap ten ngoi sao');
+    alert(check_stars(star));
+</script>
+
 </body>
 </html>

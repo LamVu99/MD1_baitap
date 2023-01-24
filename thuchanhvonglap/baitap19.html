@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="a" placeholder="Nhập số tiền vốn">
+<input type="text" id="n" placeholder="Nhập số tháng gửi">
+<input type="text" id="r" placeholder="Nhập số % lãi bạn muốn">
+<button type="button" onclick="tienlai()">ENTER</button>
+<p id="result"></p>
+<script>
+    function tienlai() {
+        let a = +document.getElementById('a').value;
+        let n = +document.getElementById('n').value;
+        let r = +document.getElementById('r').value;
+        let sotienlai;
+        for (let i = 0; i < n; i++) {
+            sotienlai = a * (r / 100);
+            a = a + sotienlai;
+        }
+        document.getElementById("result").innerHTML = a;
+    }
+</script>
 </body>
 </html>
