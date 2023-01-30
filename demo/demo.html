@@ -19,7 +19,12 @@
         if (e.key == 'a') {
             x.style.left = parseInt(x.style.left) - 100 + 'px';
         }
-    })
+    });
+    window.addEventListener('keydown', (e) => {
+        if (e.key == 'd') {
+            x.style.right = parseInt(x.style.right) - 100 + 'px';
+        }
+    });
 
 </script>
 </html>
