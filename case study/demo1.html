@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js">
+    </script>
+</head>
+<body>
+</body>
+<script>
+    var timer, sound;
+    sound = new Howl({
+        src: ['https://www.mp3saavan.com/wp-content/uploads/2021/11/Die-For-You.mp3']
+    });
+    let pl = setInterval(function () {
+        sound.play();
+        clearInterval(pl)
+    }, 1000);
+</script>
+</html>

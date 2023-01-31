@@ -7,10 +7,11 @@
 body {
     height: 100vh;
     font-family: "Nunito Sans", sans-serif;
-    background: url('https://s.elib.vn/images/fckeditor/upload/2020/20200813/images/lien-minh-huyen-thoai.jpg') no-repeat fixed center center;
+    background: url('https://www.guidingtech.com/wp-content/uploads/Best-League-of-Legends-Wallpapers-5_4d470f76dc99e18ad75087b1b8410ea9.jpg') no-repeat fixed center center;
     -webkit-transition: all 1.0s ease;
     -moz-transition: all 1.0s ease;
     transition: all 1.0s ease;
+    background-color: black;
 }
 
 /* =========== START GAME =========== */
@@ -80,8 +81,9 @@ body {
 
 .control {
     flex : 0 0 20%;
-    background-color: #fff;
+    background-image: url("https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-14.jpg");
     height: 100%;
+    color: white;
 }
 
 .control h1 {
