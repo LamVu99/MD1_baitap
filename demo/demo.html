@@ -8,12 +8,17 @@
 <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-nobita-chat-ngau-nhat-429x600.jpg" id="anh"
      alt="" style="width: 128px; height: 128px; position: absolute; left: 0; top: 0">
 <button onclick="phai()">Sang phải</button>
+<button onclick="trai()">Sang trai</button>
 </body>
 <script>
     let x = document.getElementById('anh');
     function phai() {
         let x = document.getElementById('anh');
         x.style.left = parseInt(x.style.left) + 100 + 'px';
+    }
+    function trai() {
+        let x = document.getElementById('anh');
+        x.style.right = parseInt(x.style.right) + 100 + 'px';
     }
     window.addEventListener('keydown', (e) => {
         if (e.key == 'a') {

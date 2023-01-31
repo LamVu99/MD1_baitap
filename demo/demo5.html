@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
 <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-nobita-chat-ngau-nhat-429x600.jpg" id="anh"
      alt="" style="width: 128px; height: 128px; position: relative; left: 0px; top: 0px; border-radius: 50%">
 <script>
   let x = document.getElementById('anh');
+  let speedX = 1;
+  let speedY = 1;
   setInterval(() => {
     x.style.left = parseInt(x.style.left) + 10 + 'px';
-    if (parseInt(x.style.left) >= window.innerWidth) {
-     x.style.left = '-150px'
+    if (parseInt(x.style.left) >= window.innerWidth - 150 ) {
+     speedY =-speedY
     }
   }, 10)
 </script>

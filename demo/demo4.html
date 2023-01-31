@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
 </head>
 <body>
 <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-nobita-chat-ngau-nhat-429x600.jpg" id="anh"
      alt="" style="width: 128px; height: 128px; position: relative; left: 0px; top: 0px; border-radius: 50%">
 <script>
   let x = document.getElementById('anh');
+  let speedX = 1;
+  let speedY = 0;
   setInterval(() => {
-    x.style.left = parseInt(x.style.left) + 10 + 'px';
+    x.style.left = parseInt(x.style.left) + speedX + 'px';
+    x.style.top = parseInt(x.style.top) + speedY + 'px';
     if (parseInt(x.style.left) >= window.innerWidth) {
-     x.style.left = '-150px'
+      x.style.left = '-150px'
     }
   }, 10)
+  window.addEventListener('keydown', (e) => {
+    if (e.key == 'd') {
+      speedX = 1;
+      speedY = 0;
+    }
+    if (e.key == 'a') {
+      speedX = -1;
+      speedY = 0;
+    }
+  })
 </script>
 </body>
 </html>

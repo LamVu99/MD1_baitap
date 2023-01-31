@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function gradingStudents(grades) {
+    let result = [];
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] <= 100) {
+          if (grades[i] + 2 - grades[i] < 3) {
+            result = grades[i] + 2;
+            console.log(result);
+          }
+      }
+    }
+  }
+  let grades = [73, 67, 38, 33];
+  gradingStudents(grades)
+</script>
+
+</body>
+</html>

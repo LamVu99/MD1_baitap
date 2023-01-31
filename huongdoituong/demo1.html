@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class cat {
+        animalcat(name, weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+       eat(foodweight) {
+            this.weight += foodweight
+        }
+        getI4() {
+        alert(this.name + ' co can nang la ' + this.weight);
+        }
+    }
+    class mouse {
+        animalmouse(name, weight) {
+            this.name = name;
+            this.weight = weight;
+            this.isDie = false;
+        }
+       getI4() {
+            if (this.isDie) {
+                alert(this.name + ' da chet ')
+            } else {
+                alert(this.name + ' co can nang la ' + this.weight);
+            }
+       }
+        }
+
+</script>
+</body>
+</html>
