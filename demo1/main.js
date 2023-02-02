@@ -5,6 +5,8 @@ const endGameEl = document.querySelector('#end-game');
 const levelOptionEl = document.querySelector('#level-option');
 const memoryGameEl = document.querySelector('.memory-game');
 
+const btnSighUp = document.querySelector('#signUp');
+const btnSighIn = document.querySelector('#signIn');
 const btnStartGame = document.querySelector('#btn-start-game');
 const btnPlayAgain = document.querySelector('#btn-play-again');
 const btnReload = document.querySelector('#btn-reload');

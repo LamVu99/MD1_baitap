@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="nhap2.css">
+</head>
+<body>
+
+<div class="login">
+    <h2 class="active"> sign in </h2>
+
+    <h2 class="nonactive"> sign up </h2>
+
+
+        <input type="text" class="text" name="username" id="name" autocomplete="off" onchange="document.getElementById('btn').disabled = false">
+        <span>username</span>
+
+        <br>
+
+        <br>
+
+        <input onchange="document.getElementById('btn').disabled = false" type="password" class="text" name="password" id="password" autocomplete="off">
+        <span>password</span>
+        <br>
+
+        <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+        <label for="checkbox-1-1">Keep me Signed in</label>
+
+        <button class="signin" disabled id="btn" onclick="location.href='index.html'">
+            Sign In
+        </button>
+
+        <hr>
+
+        <a href="#">Forgot Password?</a>
+
+</div>
+</body>
+<script src="nhap2.js"></script>
+</html>

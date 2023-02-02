@@ -13,6 +13,7 @@ body {
     transition: all 1.0s ease;
     background-color: black;
 }
+/* =========== SighUp/SighIn =========== */
 
 /* =========== START GAME =========== */
 #start-game {
@@ -21,6 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     color: #333;
 }
 
@@ -30,7 +32,6 @@ body {
     color: #fff;
     margin-bottom: 1rem;
 }
-
 #start-game h2 {
     font-family: "Bungee Inline", sans-serif;
     font-size: 4rem;
@@ -46,7 +47,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .level-container p {
     font-size: 2rem;
     font-family: "Bungee Inline", sans-serif;
@@ -81,11 +81,10 @@ body {
 }
 
 .control {
-    flex: 0 0 20%;
+    flex : 0 0 20%;
     background-image: url("https://candid.technology/wp-content/uploads/2019/10/League-of-Legends-Wallpaper-14.jpg");
     height: 100%;
     color: white;
-    style: left;
 }
 
 .control h1 {
